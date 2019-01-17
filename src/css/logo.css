@@ -1,0 +1,13 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.main-logo {
+    margin-right: 20px;
+    width: 120px;
+}
+@media screen and (min-width:700px) {
+    .main-logo > * {
+        width: 159px;
+    }
+}

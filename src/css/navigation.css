@@ -1,0 +1,25 @@
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav-item {
+    background-color: forestgreen;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 7px;
+    color: ivory;
+    transition: 0.3s;
+}
+.nav-item:hover {
+    background-color: ivory;
+    border: 2px solid forestgreen;
+    color: forestgreen;
+}
+.nav-item a {
+    text-decoration: none;
+}
+.nav-item + .nav-item {
+    margin-left: 20px;
+}

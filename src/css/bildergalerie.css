@@ -1,0 +1,55 @@
+
+.VierBilderQuerformat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.VierBilderQuerformat > * {
+    margin: 15px;
+
+}
+
+.ZweiBilderQuerEinsHoch {
+   display: flex;
+   flex-direction: column;
+}
+
+.ZweiBilderQuerEinsHoch > * {
+    margin: 15px;
+}
+
+.ImageQuerContainer {
+}
+
+.ImageQuerContainer > * + * {
+    margin-top: 30px;
+}
+
+.ImageHochContainer {
+}
+.bildergalerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bildergalerie > * {
+
+    margin: 15px;
+}
+
+@media screen and (min-width:700px) {
+    .bildergalerie > * {
+        width: calc(50% - 30px);
+    }
+    .VierBilderQuerformat > * {
+        width: calc(50% - 30px);
+    }
+    .ZweiBilderQuerEinsHoch {
+        flex-direction: row;
+    }
+    .ImageQuerContainer {
+        width: calc(45% - 30px);
+    }
+    .ImageHochContainer {
+        width: calc(55% - 30px);
+    }
+}
