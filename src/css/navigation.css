@@ -3,7 +3,20 @@
     flex-direction: row;
     list-style-type: none;
 }
+.contact-icon-container {
+    display: flex;
+    flex-direction: row;
+}
+.contact-icon {
+height: 30px;
+    margin-right: 20px;
+    fill: ivory;
+}
+.contact-icon-container:hover .contact-icon {
+ fill: forestgreen;
+}
 .nav-item {
+    display: flex;
     background-color: forestgreen;
     padding: 10px 20px;
     cursor: pointer;
@@ -11,6 +24,7 @@
     border-radius: 7px;
     color: ivory;
     transition: 0.3s;
+    align-items: center;
 }
 .nav-item:hover {
     background-color: ivory;
